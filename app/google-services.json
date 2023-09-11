@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "19586794263",
+    "project_id": "sverccommercefinal",
+    "storage_bucket": "sverccommercefinal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19586794263:android:3f96004246f31590b1ed52",
+        "android_client_info": {
+          "package_name": "hr.algebra.productadder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "19586794263-cudptr8pggil0rjr2m9ki4casvvo9btn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDB1XBQ_GrXI7uGyJeV9gAjXwEuX-ora1o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "19586794263-cudptr8pggil0rjr2m9ki4casvvo9btn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:19586794263:android:aaa0701d643f7bd8b1ed52",
+        "android_client_info": {
+          "package_name": "hr.algebra.sverccommercefinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "19586794263-cudptr8pggil0rjr2m9ki4casvvo9btn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDB1XBQ_GrXI7uGyJeV9gAjXwEuX-ora1o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "19586794263-cudptr8pggil0rjr2m9ki4casvvo9btn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
