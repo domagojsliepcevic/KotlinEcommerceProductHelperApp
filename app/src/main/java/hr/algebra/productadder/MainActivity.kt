@@ -135,8 +135,32 @@ class MainActivity : AppCompatActivity() {
 
             // Save the product to Firebase Firestore.
             saveProduct()
+
+            // Reset the form after saving the product.
+            resetForm()
+
+            return true
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    // Function to reset the form fields and selected data.
+    private fun resetForm() {
+        // Clear form fields
+        binding.etName.text.clear()
+        binding.etCategory.text.clear()
+        binding.etPrice.text.clear()
+        binding.etOfferPercentage.text.clear()
+        binding.etDescription.text.clear()
+        binding.etSizes.text.clear()
+
+        // Clear selected images and colors
+        selectedImages.clear()
+        selectedColors.clear()
+
+        // Update the UI to reflect the changes
+        updateImages()
+        updateColors()
     }
 
     // Function to save the product data to Firebase Firestore.
@@ -152,8 +176,7 @@ class MainActivity : AppCompatActivity() {
 
         // Execute the following code block in a background thread.
         lifecycleScope.launch(Dispatchers.IO) {
-            withContext(Dispatchers.Main)
-            {
+            withContext(Dispatchers.Main) {
                 showLoading()
             }
             // Show a loading progress bar.
@@ -175,8 +198,7 @@ class MainActivity : AppCompatActivity() {
                 }.await()
             } catch (e: Exception) {
                 e.printStackTrace()
-                withContext(Dispatchers.Main)
-                {
+                withContext(Dispatchers.Main) {
                     // Hide the loading progress bar in case of an exception.
                     hideLoading()
                 }
